@@ -1,0 +1,12 @@
+{
+  "name": "wataos",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "live-server public/"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "live-server": "^1.2.2"
+  }
+}
