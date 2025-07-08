@@ -127,3 +127,10 @@ export function openBrowser() {
     iframe.src = url;
   };
 }
+import { openWallpaperChanger } from "./wallpaper";
+
+document.querySelector("#start-menu ul")!.innerHTML += `
+  <li onclick="openWallpaperChanger()">壁紙変更</li>
+`;
+
+(window as any).openWallpaperChanger = openWallpaperChanger;
