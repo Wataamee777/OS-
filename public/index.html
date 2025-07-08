@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WataOS Web</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="desktop"></div>
+  <div id="taskbar">
+    <button id="start-button">スタート</button>
+  </div>
+
+  <!-- スタートメニュー -->
+  <div id="start-menu" style="display:none;">
+    <ul>
+      <li onclick="openTerminal()">ターミナル</li>
+      <li onclick="openBrowser()">ブラウザ</li>
+      <!-- ここに他のアプリ追加できる -->
+    </ul>
+  </div>
+
+<script type="module" src="main.js"></script>
+<script src="dist/rust_terminal.js"></script>
+</body>
+</html>
