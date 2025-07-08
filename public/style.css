@@ -1,0 +1,107 @@
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #222;
+  color: white;
+}
+
+#desktop {
+  position: relative;
+  height: calc(100vh - 40px);
+  background: url('assets/default-wallpaper.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#taskbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 40px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#start-button {
+  background-color: #0078d7;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#start-menu {
+  position: fixed;
+  bottom: 40px;
+  left: 10px;
+  background-color: #333;
+  border: 1px solid #555;
+  width: 150px;
+  color: white;
+}
+
+#start-menu ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+#start-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#start-menu li:hover {
+  background-color: #0078d7;
+}
+
+.window {
+  position: absolute;
+  background: #222;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px #000;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.window-header {
+  background-color: #0078d7;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-content {
+  flex-grow: 1;
+  padding: 10px;
+  background: #111;
+  overflow: auto;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input, textarea {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+textarea {
+  resize: none;
+}
